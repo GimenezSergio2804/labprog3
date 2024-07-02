@@ -18,7 +18,18 @@ body{
     max-width: 1400px;
     margin: 0 auto;
 }
+ 
+.container-icon{                       /* (((()))) santiago O (((()))) */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 
+.container-icon__img{                        /* (((()))) santiago O (((()))) */    
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
 /* ============================= HEADER - INICIO ===================================== */
 

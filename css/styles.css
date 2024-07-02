@@ -1,0 +1,580 @@
+/* ================== custom property INICIO =============================== */
+:root {
+    --color-fuente: whitesmoke;
+    --color-fondo: rgba(0, 0, 0, 0.750);
+}
+
+/* ================== custom property FIN =============================== */
+/* Definimos un ancho para darle siempre el mismo aspecto a la pagina */
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* ================== Header INICIO =============================== */
+header {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    color: whitesmoke;
+    background-color: var(--color-fondo)
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: rgb(18, 173, 135);
+    text-shadow: 0px 0px 20px rgb(18, 173, 135);
+}
+
+.nav-link-enlace {
+    border-bottom: 2px solid var(--color-fuente);
+    padding: 5px;
+    border-radius: 2px;
+}
+.nav svg{
+    stroke: rgb(113, 109, 109);    color: rgb(18, 173, 135);
+    text-shadow: 0px 0px 20px rgb(18, 173, 135);
+}
+
+.nav svg:hover{
+    color: rgb(18, 173, 135);
+    text-shadow: 0px 0px 20px rgb(18, 173, 135);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo:hover {
+    transform: scale(1.07);
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    opacity: 80%;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+}
+
+.logo:hover img {
+    transform: rotate(3deg);
+}
+
+.container-icon {                 /* (((()))) icono del carrito (((()))) */
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #000;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+.container-icon:hover {                 /* (((()))) hover del carrito O (((()))) */
+    transform: scale(1.07);
+}
+
+.container-icon img {                      /* (((()))) img del carrito (((()))) */
+    height: 50px;
+    margin-right:30%;
+    opacity: 80%;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+}
+
+.container-icon:hover img {                   /* (((()))) rotacion (((()))) */
+    transform: rotate(3deg);
+}
+
+
+.count-product {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+#contador-productos{
+    font-size: 18px;
+}
+
+.container-cart-products{
+    position: absolute ;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.info-cart-product {
+    display: flex;
+    justify-content:space-between ;
+    flex: 0.8;
+
+}
+ 
+.titulo-producto-carrito{
+    font-size: 20px;
+
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+    stroke: #000;
+}
+
+.icon-close :hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h6 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+/* ================== Header FIN =============================== */
+
+/* ================== Fondo =============================== */
+body {
+    background:
+        linear-gradient(150deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.8)),
+        url(../images/fondo.webp);
+    background-image: no-repeat center fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+    color: white;
+}
+ 
+
+
+
+/* ================== Fondo FIN =============================== */
+
+/* ================== TITULOS =============================== */
+h2 {
+    background-color: var(--color-fondo);
+}
+
+h3 {
+    font-size: xx-large;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-fondo);
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* ================== TITULOS fin =============================== */
+
+menu {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-fondo);
+    border-radius: 20px;
+    text-align: center;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-fondo);
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ============================= BUSQUEDA - INICIO ===================================== */
+/* Seccion del buscador, por el momento es solo un elemento, en otra version quizas a la izquierda se agregue un filtro para la busqueda */
+.search{
+    height: 60px;
+    margin: 15px auto;
+    border-bottom: 1px solid black;
+}
+
+.search__container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* Para poder hacerlo visualmente mejor, en versiones medianas y pequeñas se centra. */
+@media screen and (max-width: 768px){
+    .search__container{
+        justify-content: center;
+    }
+}
+
+.search__into{
+    display: flex;
+    align-items: center;
+    padding: 4px 15px;
+    border-radius: 8px;
+    background-color: rgb(232, 239, 245);
+}
+
+@media screen and (max-width: 768px){
+    .search__into{
+        /* Para generar una buena experiencia de usuario en tamaños medianos y pequeños se agranda el tamaño */
+        width: 90%;
+    }
+}
+
+.search__input{
+    width: 100%;
+    margin-left: 5px;
+    border: none;
+    background-color: rgb(232, 239, 245);
+    padding: 10px 5px;
+    
+}
+/* Sacamos el focus del search para que no sea chocante al momento de seleccionarlo */
+.search__input:focus{
+   outline: none;
+}
+
+.informacion button {
+    background-color: #333;
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* ============================= BUSQUEDA - FIN ===================================== */
+
+/* ============================= PRODUCTOS - INICIO ===================================== */
+.products{
+    margin: 40px auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 100%;
+}
+/* le damos estilo a la card con flexbox. */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 260px;
+    border-radius: 8px;
+    /* Vamos a ocultar lo que sobresale para que no se vea mal */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    /* desplazamos hacia arriba 10 px */
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 0.1px solid #ccc;
+    /* Cuando estamos encima de la card podemos observar todo el contenido, hasta el que se desborda */
+    overflow: visible;
+}
+  
+.sale__price {
+    font-size: 20px;
+    margin-right: 10px;
+}
+  
+.card__background{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #dedada40;
+    height: 300px;
+    /* border-radius: 8px; */
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+/* le damos color y desbordamos contenido cuando pasamos por arriba el mouse */
+.card__background:hover{
+    overflow: visible;
+    background-color: #b2aaaa40;
+}
+
+.card__img{
+    height: 150px;
+    padding: 10px;
+    /* pequeña sombra para la imagen */
+    filter: drop-shadow(2px 2px 8px black);
+    /* propiedad de imagen para acomodarla respecto a su contenedor */
+    object-fit: cover;
+    /* hacemos una pequeña transicion para que el cambio no sea tan brusco */
+    transition: transform 0.3s ease;
+}
+/* escalamos la imagen para que sea la prioridad visual */
+.card:hover .card__img {
+    transform: scale(1.8);
+}
+
+.card__texts{
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__name{
+    font-size: 24px;
+    padding: 2px 6px;
+    height: 10px;
+}
+
+.card__description{
+    font-size: 12px;
+    padding: 0 15px;
+    text-align: justify;
+    overflow: hidden;
+    color: whitesmoke;
+    height: 50px;
+}
+
+.card__description:hover{
+    overflow: visible;
+}
+
+.sale{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.sale__price {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.card:hover .sale__svg {
+    fill: grey;
+}
+
+/* ============================= PRODUCTOS - FIN ===================================== */
+
+
+
+/* ============================= MAPA - INICIO ===================================== */
+
+
+/* ============================= MAPA - FIN ===================================== */
+
+/* ================== contenido de nosotros =============================== */
+.contenido {
+    flex: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contenido img {
+    border-radius: 20px;
+    margin-right: 20px;
+    height: 50%;
+
+}
+
+.contenido p {
+    text-align: start;
+    margin: 0%;
+    font-size: x-large;
+}
+
+/* ================== contenido de nosotros fin=============================== */
+
+/* ================== form estilos =============================== */
+.registro {
+    background-color: var(--color-fondo);
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.registro input {
+    text-align: center;
+    border-bottom: 1px solid rgb(18, 173, 135) ;
+    background: none;
+    color: var(--color-fuente);
+}
+
+.registro button {
+    text-align: center;
+    border-bottom: 1px solid rgb(18, 173, 135) ;
+    background: none;
+    color: var(--color-fuente);
+}
+
+.botoncontacto {
+    background-color: var(--color-fondo);
+    padding: .5rem 1.5rem;
+    outline: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    flex: 0 0 100%;
+    transition: all .3s ease;
+    font-size:xx-large ;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+.botoncontacto:hover {
+    background-color: rgb(18, 173, 135);
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: rgb(18, 173, 135);
+    cursor: pointer;
+
+}
+
+textarea {
+    font-family: sans-serif;
+    background: none;
+    font: var(--color-fuente);
+    color: var(--color-fuente);
+}
+
+/* ================== form estilos fin =============================== */
+
+/* ================== Footer =============================== */
+footer {
+    background-color: var(--color-fondo);
+    text-align: center;
+    font-weight: 600;
+}
+
+#copyright {
+    font-weight: 700;
+}
+
+/* ================== Footer =============================== */
+
+/* ================== tabla show data =============================== */
+table {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-fondo);
+    border-radius: 20px;
+    text-align: center;
+    border-style: inset;
+}
+
+table th {
+    border-style: inset;
+    border-radius: 20px;
+}
+
+table td {
+    border-style:inset;
+    border-radius: 20px;
+}
+/* ================== tabla show data fin =============================== */
+
+
+/* ================== scroll =============================== */
+.scroll{
+    background-color: #ccc;
+    box-shadow: .1rem .2rem .3rem #333;
+}
+
+.scroll img {
+    filter: invert(15%);
+}
+
+.scroll h1 {
+    color:black; 
+
+}
+
+.compras-boton{               /*boton  compras*/
+    padding: 6px;
+    margin: 10%;
+}
+
+
+
+.container-icon {
+    position: relative;
+    z-index: 1;            /*  contenedor-icon esté detrás del ícono de compras */
+  }
+  
+
+  
